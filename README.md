@@ -3,7 +3,7 @@
 
 [![iOS](https://img.shields.io/badge/Platform-iOS-orange.svg?style=flat)](https://developer.apple.com/ios/)
 [![Swift 5+](https://img.shields.io/badge/Swift-5+-orange.svg?style=flat)](https://developer.apple.com/swift/)
-[![TinderCardView](https://img.shields.io/badgeTinder-CardView-orange.svg?style=flat)](https://github.com/Rahul-Mayani/TinderCardView/)
+[![TinderCardView](https://img.shields.io/badge/Tinder-CardView-orange.svg?style=flat)](https://github.com/Rahul-Mayani/TinderCardView/)
 [![Architecture](https://img.shields.io/badge/Architecture%20Pattern-MVVM-green.svg?style=flat)](https://github.com/Rahul-Mayani/TinderCardView/)
 
 
@@ -16,12 +16,19 @@ Tinder card like carousel to swipe left and right
 ## Requirements
 
 pod 'Kingfisher'
+
 pod 'NVActivityIndicatorView'
+
 pod 'RealmSwift'
+
 pod 'Alamofire'
+
 pod 'RxCocoa'
+
 pod 'RxSwift'
+
 pod 'Cartography'
+
 pod 'SwiftLint'
 
 ## Installation
