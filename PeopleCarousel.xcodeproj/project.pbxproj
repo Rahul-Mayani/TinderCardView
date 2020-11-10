@@ -1,0 +1,943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BFDDECD449C717B762FFD6B /* Pods_PeopleCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84851459CF3A075C56948F27 /* Pods_PeopleCarousel.framework */; };
+		8DA755B08920477867DAA2E3 /* Pods_PeopleCarousel_PeopleCarouselUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78432E832F9CEFBB4673413D /* Pods_PeopleCarousel_PeopleCarouselUITests.framework */; };
+		9DD202782EF7407B897562A4 /* Pods_PeopleCarouselTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBED7FE39B6E589AAABD615E /* Pods_PeopleCarouselTests.framework */; };
+		EE5D2CA4253963AE009CCBCF /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2C99253963AC009CCBCF /* ViewManager.swift */; };
+		EE5D2CA5253963AE009CCBCF /* ZLSwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2C9D253963AD009CCBCF /* ZLSwipeableView.swift */; };
+		EE5D2CA6253963AE009CCBCF /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2C9E253963AD009CCBCF /* Scheduler.swift */; };
+		EE5D2CA8253963AE009CCBCF /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2CA0253963AD009CCBCF /* Direction.swift */; };
+		EE5D2CC425396503009CCBCF /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2CC325396503009CCBCF /* PeopleView.swift */; };
+		EE5D2CC925396562009CCBCF /* PeopleContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5D2CC825396562009CCBCF /* PeopleContentView.xib */; };
+		EE5D2CCE253969BA009CCBCF /* RRUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2CCD253969BA009CCBCF /* RRUIView+Extension.swift */; };
+		EE5D2D1625399846009CCBCF /* PeopleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2D1525399846009CCBCF /* PeopleContentView.swift */; };
+		EE73D90F25387CE8004AE383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D90E25387CE8004AE383 /* AppDelegate.swift */; };
+		EE73D91625387CE8004AE383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE73D91425387CE8004AE383 /* Main.storyboard */; };
+		EE73D91825387CEB004AE383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE73D91725387CEB004AE383 /* Assets.xcassets */; };
+		EE73D91B25387CEB004AE383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE73D91925387CEB004AE383 /* LaunchScreen.storyboard */; };
+		EE73D92625387CEB004AE383 /* PeopleCarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D92525387CEB004AE383 /* PeopleCarouselTests.swift */; };
+		EE73D93125387CEB004AE383 /* PeopleCarouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D93025387CEB004AE383 /* PeopleCarouselUITests.swift */; };
+		EE73D94A25387E8F004AE383 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D94925387E8F004AE383 /* BaseVC.swift */; };
+		EE73D96025387F89004AE383 /* PeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D95F25387F89004AE383 /* PeopleVC.swift */; };
+		EE73D96525387FE5004AE383 /* PeopleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D96425387FE5004AE383 /* PeopleVM.swift */; };
+		EE73D96A2538806E004AE383 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D9692538806E004AE383 /* PeopleModel.swift */; };
+		EE73D96F25388118004AE383 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D96E25388118004AE383 /* Structs.swift */; };
+		EE73D977253881D9004AE383 /* RRLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D976253881D9004AE383 /* RRLoader.swift */; };
+		EE73D97C253881FB004AE383 /* RRAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D97B253881FB004AE383 /* RRAPIManager.swift */; };
+		EE73D9812538829C004AE383 /* RRHTTPStatusCodeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D9802538829C004AE383 /* RRHTTPStatusCodeEnum.swift */; };
+		EE73D986253882F6004AE383 /* RRErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D985253882F6004AE383 /* RRErrorEnum.swift */; };
+		EE73D98B25388324004AE383 /* RRUIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D98A25388324004AE383 /* RRUIImageView+Extension.swift */; };
+		EE73D99025388344004AE383 /* RRGeneral+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D98F25388344004AE383 /* RRGeneral+Extensions.swift */; };
+		EE73D9952538835F004AE383 /* RRUIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D9942538835F004AE383 /* RRUIAlertController+Extension.swift */; };
+		EE73D99A2538838A004AE383 /* RRx+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D9992538838A004AE383 /* RRx+Extension.swift */; };
+		EE73D99F253886EB004AE383 /* RxBindingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D99E253886EB004AE383 /* RxBindingOperators.swift */; };
+		EE73D9A42538943A004AE383 /* PeopleInfoAllModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D9A32538943A004AE383 /* PeopleInfoAllModels.swift */; };
+		EED6260F2539F05E000CE1EF /* PeopleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D96425387FE5004AE383 /* PeopleVM.swift */; };
+		EED626132539F061000CE1EF /* PeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D95F25387F89004AE383 /* PeopleVC.swift */; };
+		EED626172539F066000CE1EF /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D9692538806E004AE383 /* PeopleModel.swift */; };
+		EED6261B2539F06F000CE1EF /* PeopleInfoAllModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D9A32538943A004AE383 /* PeopleInfoAllModels.swift */; };
+		EED6261F2539F077000CE1EF /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D94925387E8F004AE383 /* BaseVC.swift */; };
+		EED626232539F080000CE1EF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEECFD762539A44F00883178 /* ButtonView.swift */; };
+		EED626242539F082000CE1EF /* PeopleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2D1525399846009CCBCF /* PeopleContentView.swift */; };
+		EED626282539F085000CE1EF /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2CC325396503009CCBCF /* PeopleView.swift */; };
+		EED6262C2539F088000CE1EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73D90E25387CE8004AE383 /* AppDelegate.swift */; };
+		EEECFD772539A44F00883178 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEECFD762539A44F00883178 /* ButtonView.swift */; };
+		EEECFD7C2539A45B00883178 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEECFD7B2539A45B00883178 /* ButtonView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE73D92225387CEB004AE383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE73D90325387CE8004AE383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE73D90A25387CE8004AE383;
+			remoteInfo = PeopleCarousel;
+		};
+		EE73D92D25387CEB004AE383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE73D90325387CE8004AE383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE73D90A25387CE8004AE383;
+			remoteInfo = PeopleCarousel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16810B95291163107B30907C /* Pods-PeopleCarousel-PeopleCarouselUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleCarousel-PeopleCarouselUITests.debug.xcconfig"; path = "Target Support Files/Pods-PeopleCarousel-PeopleCarouselUITests/Pods-PeopleCarousel-PeopleCarouselUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B927FC9726929501A138052 /* Pods-PeopleCarousel-PeopleCarouselUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleCarousel-PeopleCarouselUITests.release.xcconfig"; path = "Target Support Files/Pods-PeopleCarousel-PeopleCarouselUITests/Pods-PeopleCarousel-PeopleCarouselUITests.release.xcconfig"; sourceTree = "<group>"; };
+		391C16C61F04D397D98CD86E /* Pods-PeopleCarousel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleCarousel.release.xcconfig"; path = "Target Support Files/Pods-PeopleCarousel/Pods-PeopleCarousel.release.xcconfig"; sourceTree = "<group>"; };
+		78432E832F9CEFBB4673413D /* Pods_PeopleCarousel_PeopleCarouselUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleCarousel_PeopleCarouselUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81A6E639180B6A67EA35C26F /* Pods-PeopleCarouselTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleCarouselTests.release.xcconfig"; path = "Target Support Files/Pods-PeopleCarouselTests/Pods-PeopleCarouselTests.release.xcconfig"; sourceTree = "<group>"; };
+		84851459CF3A075C56948F27 /* Pods_PeopleCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0051478400320DEF4CCEFF /* Pods-PeopleCarouselTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleCarouselTests.debug.xcconfig"; path = "Target Support Files/Pods-PeopleCarouselTests/Pods-PeopleCarouselTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBED7FE39B6E589AAABD615E /* Pods_PeopleCarouselTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleCarouselTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0BC215E24B6A244A744A26 /* Pods-PeopleCarousel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleCarousel.debug.xcconfig"; path = "Target Support Files/Pods-PeopleCarousel/Pods-PeopleCarousel.debug.xcconfig"; sourceTree = "<group>"; };
+		EE5D2C99253963AC009CCBCF /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		EE5D2C9D253963AD009CCBCF /* ZLSwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableView.swift; sourceTree = "<group>"; };
+		EE5D2C9E253963AD009CCBCF /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		EE5D2CA0253963AD009CCBCF /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		EE5D2CC325396503009CCBCF /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		EE5D2CC825396562009CCBCF /* PeopleContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleContentView.xib; sourceTree = "<group>"; };
+		EE5D2CCD253969BA009CCBCF /* RRUIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RRUIView+Extension.swift"; sourceTree = "<group>"; };
+		EE5D2D1525399846009CCBCF /* PeopleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleContentView.swift; sourceTree = "<group>"; };
+		EE73D90B25387CE8004AE383 /* PeopleCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE73D90E25387CE8004AE383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE73D91525387CE8004AE383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE73D91725387CEB004AE383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE73D91A25387CEB004AE383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE73D91C25387CEB004AE383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE73D92125387CEB004AE383 /* PeopleCarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleCarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE73D92525387CEB004AE383 /* PeopleCarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCarouselTests.swift; sourceTree = "<group>"; };
+		EE73D92725387CEB004AE383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE73D92C25387CEB004AE383 /* PeopleCarouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleCarouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE73D93025387CEB004AE383 /* PeopleCarouselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCarouselUITests.swift; sourceTree = "<group>"; };
+		EE73D93225387CEB004AE383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE73D94925387E8F004AE383 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		EE73D95F25387F89004AE383 /* PeopleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVC.swift; sourceTree = "<group>"; };
+		EE73D96425387FE5004AE383 /* PeopleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVM.swift; sourceTree = "<group>"; };
+		EE73D9692538806E004AE383 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		EE73D96E25388118004AE383 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		EE73D976253881D9004AE383 /* RRLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoader.swift; sourceTree = "<group>"; };
+		EE73D97B253881FB004AE383 /* RRAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRAPIManager.swift; sourceTree = "<group>"; };
+		EE73D9802538829C004AE383 /* RRHTTPStatusCodeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRHTTPStatusCodeEnum.swift; sourceTree = "<group>"; };
+		EE73D985253882F6004AE383 /* RRErrorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRErrorEnum.swift; sourceTree = "<group>"; };
+		EE73D98A25388324004AE383 /* RRUIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RRUIImageView+Extension.swift"; sourceTree = "<group>"; };
+		EE73D98F25388344004AE383 /* RRGeneral+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RRGeneral+Extensions.swift"; sourceTree = "<group>"; };
+		EE73D9942538835F004AE383 /* RRUIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RRUIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		EE73D9992538838A004AE383 /* RRx+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RRx+Extension.swift"; sourceTree = "<group>"; };
+		EE73D99E253886EB004AE383 /* RxBindingOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBindingOperators.swift; sourceTree = "<group>"; };
+		EE73D9A32538943A004AE383 /* PeopleInfoAllModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoAllModels.swift; sourceTree = "<group>"; };
+		EEECFD762539A44F00883178 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		EEECFD7B2539A45B00883178 /* ButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE73D90825387CE8004AE383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BFDDECD449C717B762FFD6B /* Pods_PeopleCarousel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE73D91E25387CEB004AE383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DD202782EF7407B897562A4 /* Pods_PeopleCarouselTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE73D92925387CEB004AE383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA755B08920477867DAA2E3 /* Pods_PeopleCarousel_PeopleCarouselUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CB176D8668D3159E4F999A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF0BC215E24B6A244A744A26 /* Pods-PeopleCarousel.debug.xcconfig */,
+				391C16C61F04D397D98CD86E /* Pods-PeopleCarousel.release.xcconfig */,
+				16810B95291163107B30907C /* Pods-PeopleCarousel-PeopleCarouselUITests.debug.xcconfig */,
+				1B927FC9726929501A138052 /* Pods-PeopleCarousel-PeopleCarouselUITests.release.xcconfig */,
+				AA0051478400320DEF4CCEFF /* Pods-PeopleCarouselTests.debug.xcconfig */,
+				81A6E639180B6A67EA35C26F /* Pods-PeopleCarouselTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		40B014485133B263A4BE04F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84851459CF3A075C56948F27 /* Pods_PeopleCarousel.framework */,
+				78432E832F9CEFBB4673413D /* Pods_PeopleCarousel_PeopleCarouselUITests.framework */,
+				BBED7FE39B6E589AAABD615E /* Pods_PeopleCarouselTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE5D2C97253963AC009CCBCF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D2C98253963AC009CCBCF /* ZLSwipeableViewSwift */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		EE5D2C98253963AC009CCBCF /* ZLSwipeableViewSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D2C99253963AC009CCBCF /* ViewManager.swift */,
+				EE5D2C9D253963AD009CCBCF /* ZLSwipeableView.swift */,
+				EE5D2C9E253963AD009CCBCF /* Scheduler.swift */,
+				EE5D2CA0253963AD009CCBCF /* Direction.swift */,
+			);
+			path = ZLSwipeableViewSwift;
+			sourceTree = "<group>";
+		};
+		EE5D2CBF253964ED009CCBCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D2CC325396503009CCBCF /* PeopleView.swift */,
+				EE5D2D1525399846009CCBCF /* PeopleContentView.swift */,
+				EE5D2CC825396562009CCBCF /* PeopleContentView.xib */,
+				EEECFD762539A44F00883178 /* ButtonView.swift */,
+				EEECFD7B2539A45B00883178 /* ButtonView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE73D90225387CE8004AE383 = {
+			isa = PBXGroup;
+			children = (
+				EE73D90D25387CE8004AE383 /* PeopleCarousel */,
+				EE73D92425387CEB004AE383 /* PeopleCarouselTests */,
+				EE73D92F25387CEB004AE383 /* PeopleCarouselUITests */,
+				EE73D90C25387CE8004AE383 /* Products */,
+				1CB176D8668D3159E4F999A4 /* Pods */,
+				40B014485133B263A4BE04F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE73D90C25387CE8004AE383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE73D90B25387CE8004AE383 /* PeopleCarousel.app */,
+				EE73D92125387CEB004AE383 /* PeopleCarouselTests.xctest */,
+				EE73D92C25387CEB004AE383 /* PeopleCarouselUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE73D90D25387CE8004AE383 /* PeopleCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				EE73D90E25387CE8004AE383 /* AppDelegate.swift */,
+				EE5D2CBF253964ED009CCBCF /* Views */,
+				EE5D2C97253963AC009CCBCF /* Vendor */,
+				EE73D94825387E71004AE383 /* Extensions */,
+				EE73D94725387E71004AE383 /* Utilities */,
+				EE73D94625387E71004AE383 /* ViewControllers */,
+				EE73D94525387E71004AE383 /* ViewModels */,
+				EE73D94425387E71004AE383 /* Models */,
+				EE73D91425387CE8004AE383 /* Main.storyboard */,
+				EE73D91725387CEB004AE383 /* Assets.xcassets */,
+				EE73D91925387CEB004AE383 /* LaunchScreen.storyboard */,
+				EE73D91C25387CEB004AE383 /* Info.plist */,
+			);
+			path = PeopleCarousel;
+			sourceTree = "<group>";
+		};
+		EE73D92425387CEB004AE383 /* PeopleCarouselTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE73D92525387CEB004AE383 /* PeopleCarouselTests.swift */,
+				EE73D92725387CEB004AE383 /* Info.plist */,
+			);
+			path = PeopleCarouselTests;
+			sourceTree = "<group>";
+		};
+		EE73D92F25387CEB004AE383 /* PeopleCarouselUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE73D93025387CEB004AE383 /* PeopleCarouselUITests.swift */,
+				EE73D93225387CEB004AE383 /* Info.plist */,
+			);
+			path = PeopleCarouselUITests;
+			sourceTree = "<group>";
+		};
+		EE73D94425387E71004AE383 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE73D9692538806E004AE383 /* PeopleModel.swift */,
+				EE73D9A32538943A004AE383 /* PeopleInfoAllModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE73D94525387E71004AE383 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EE73D96425387FE5004AE383 /* PeopleVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EE73D94625387E71004AE383 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE73D94925387E8F004AE383 /* BaseVC.swift */,
+				EE73D95F25387F89004AE383 /* PeopleVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EE73D94725387E71004AE383 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE73D96E25388118004AE383 /* Structs.swift */,
+				EE73D976253881D9004AE383 /* RRLoader.swift */,
+				EE73D97B253881FB004AE383 /* RRAPIManager.swift */,
+				EE73D9802538829C004AE383 /* RRHTTPStatusCodeEnum.swift */,
+				EE73D985253882F6004AE383 /* RRErrorEnum.swift */,
+				EE73D99E253886EB004AE383 /* RxBindingOperators.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EE73D94825387E71004AE383 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE73D98A25388324004AE383 /* RRUIImageView+Extension.swift */,
+				EE73D98F25388344004AE383 /* RRGeneral+Extensions.swift */,
+				EE73D9942538835F004AE383 /* RRUIAlertController+Extension.swift */,
+				EE73D9992538838A004AE383 /* RRx+Extension.swift */,
+				EE5D2CCD253969BA009CCBCF /* RRUIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE73D90A25387CE8004AE383 /* PeopleCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE73D93525387CEB004AE383 /* Build configuration list for PBXNativeTarget "PeopleCarousel" */;
+			buildPhases = (
+				569681DD9ADE80B64970CF2A /* [CP] Check Pods Manifest.lock */,
+				EE73D90725387CE8004AE383 /* Sources */,
+				EE73D90825387CE8004AE383 /* Frameworks */,
+				EE73D90925387CE8004AE383 /* Resources */,
+				93B2FD589F740C3E8431C238 /* [CP] Embed Pods Frameworks */,
+				EE8D426825406EEC003705E4 /* Run SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeopleCarousel;
+			productName = PeopleCarousel;
+			productReference = EE73D90B25387CE8004AE383 /* PeopleCarousel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE73D92025387CEB004AE383 /* PeopleCarouselTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE73D93825387CEB004AE383 /* Build configuration list for PBXNativeTarget "PeopleCarouselTests" */;
+			buildPhases = (
+				48184806EE14C793E57DBA28 /* [CP] Check Pods Manifest.lock */,
+				EE73D91D25387CEB004AE383 /* Sources */,
+				EE73D91E25387CEB004AE383 /* Frameworks */,
+				EE73D91F25387CEB004AE383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE73D92325387CEB004AE383 /* PBXTargetDependency */,
+			);
+			name = PeopleCarouselTests;
+			productName = PeopleCarouselTests;
+			productReference = EE73D92125387CEB004AE383 /* PeopleCarouselTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE73D92B25387CEB004AE383 /* PeopleCarouselUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE73D93B25387CEB004AE383 /* Build configuration list for PBXNativeTarget "PeopleCarouselUITests" */;
+			buildPhases = (
+				3B1991BC43695FD9E1B1CBD3 /* [CP] Check Pods Manifest.lock */,
+				EE73D92825387CEB004AE383 /* Sources */,
+				EE73D92925387CEB004AE383 /* Frameworks */,
+				EE73D92A25387CEB004AE383 /* Resources */,
+				5704629B173C1DF8BB2BD5AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE73D92E25387CEB004AE383 /* PBXTargetDependency */,
+			);
+			name = PeopleCarouselUITests;
+			productName = PeopleCarouselUITests;
+			productReference = EE73D92C25387CEB004AE383 /* PeopleCarouselUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE73D90325387CE8004AE383 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					EE73D90A25387CE8004AE383 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					EE73D92025387CEB004AE383 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = EE73D90A25387CE8004AE383;
+					};
+					EE73D92B25387CEB004AE383 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = EE73D90A25387CE8004AE383;
+					};
+				};
+			};
+			buildConfigurationList = EE73D90625387CE8004AE383 /* Build configuration list for PBXProject "PeopleCarousel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE73D90225387CE8004AE383;
+			productRefGroup = EE73D90C25387CE8004AE383 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE73D90A25387CE8004AE383 /* PeopleCarousel */,
+				EE73D92025387CEB004AE383 /* PeopleCarouselTests */,
+				EE73D92B25387CEB004AE383 /* PeopleCarouselUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE73D90925387CE8004AE383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE73D91B25387CEB004AE383 /* LaunchScreen.storyboard in Resources */,
+				EE5D2CC925396562009CCBCF /* PeopleContentView.xib in Resources */,
+				EE73D91825387CEB004AE383 /* Assets.xcassets in Resources */,
+				EEECFD7C2539A45B00883178 /* ButtonView.xib in Resources */,
+				EE73D91625387CE8004AE383 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE73D91F25387CEB004AE383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE73D92A25387CEB004AE383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B1991BC43695FD9E1B1CBD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeopleCarousel-PeopleCarouselUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48184806EE14C793E57DBA28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeopleCarouselTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		569681DD9ADE80B64970CF2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeopleCarousel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5704629B173C1DF8BB2BD5AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeopleCarousel-PeopleCarouselUITests/Pods-PeopleCarousel-PeopleCarouselUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeopleCarousel-PeopleCarouselUITests/Pods-PeopleCarousel-PeopleCarouselUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeopleCarousel-PeopleCarouselUITests/Pods-PeopleCarousel-PeopleCarouselUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93B2FD589F740C3E8431C238 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeopleCarousel/Pods-PeopleCarousel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeopleCarousel/Pods-PeopleCarousel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeopleCarousel/Pods-PeopleCarousel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8D426825406EEC003705E4 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE73D90725387CE8004AE383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE73D96F25388118004AE383 /* Structs.swift in Sources */,
+				EE73D96A2538806E004AE383 /* PeopleModel.swift in Sources */,
+				EEECFD772539A44F00883178 /* ButtonView.swift in Sources */,
+				EE5D2CC425396503009CCBCF /* PeopleView.swift in Sources */,
+				EE73D9A42538943A004AE383 /* PeopleInfoAllModels.swift in Sources */,
+				EE5D2CA8253963AE009CCBCF /* Direction.swift in Sources */,
+				EE73D99A2538838A004AE383 /* RRx+Extension.swift in Sources */,
+				EE5D2D1625399846009CCBCF /* PeopleContentView.swift in Sources */,
+				EE73D9952538835F004AE383 /* RRUIAlertController+Extension.swift in Sources */,
+				EE73D90F25387CE8004AE383 /* AppDelegate.swift in Sources */,
+				EE73D9812538829C004AE383 /* RRHTTPStatusCodeEnum.swift in Sources */,
+				EE5D2CA5253963AE009CCBCF /* ZLSwipeableView.swift in Sources */,
+				EE73D96525387FE5004AE383 /* PeopleVM.swift in Sources */,
+				EE73D96025387F89004AE383 /* PeopleVC.swift in Sources */,
+				EE5D2CCE253969BA009CCBCF /* RRUIView+Extension.swift in Sources */,
+				EE5D2CA6253963AE009CCBCF /* Scheduler.swift in Sources */,
+				EE73D99025388344004AE383 /* RRGeneral+Extensions.swift in Sources */,
+				EE5D2CA4253963AE009CCBCF /* ViewManager.swift in Sources */,
+				EE73D94A25387E8F004AE383 /* BaseVC.swift in Sources */,
+				EE73D986253882F6004AE383 /* RRErrorEnum.swift in Sources */,
+				EE73D99F253886EB004AE383 /* RxBindingOperators.swift in Sources */,
+				EE73D97C253881FB004AE383 /* RRAPIManager.swift in Sources */,
+				EE73D98B25388324004AE383 /* RRUIImageView+Extension.swift in Sources */,
+				EE73D977253881D9004AE383 /* RRLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE73D91D25387CEB004AE383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE73D92625387CEB004AE383 /* PeopleCarouselTests.swift in Sources */,
+				EED6261F2539F077000CE1EF /* BaseVC.swift in Sources */,
+				EED626282539F085000CE1EF /* PeopleView.swift in Sources */,
+				EED626132539F061000CE1EF /* PeopleVC.swift in Sources */,
+				EED626172539F066000CE1EF /* PeopleModel.swift in Sources */,
+				EED6260F2539F05E000CE1EF /* PeopleVM.swift in Sources */,
+				EED626242539F082000CE1EF /* PeopleContentView.swift in Sources */,
+				EED6261B2539F06F000CE1EF /* PeopleInfoAllModels.swift in Sources */,
+				EED6262C2539F088000CE1EF /* AppDelegate.swift in Sources */,
+				EED626232539F080000CE1EF /* ButtonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE73D92825387CEB004AE383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE73D93125387CEB004AE383 /* PeopleCarouselUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE73D92325387CEB004AE383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE73D90A25387CE8004AE383 /* PeopleCarousel */;
+			targetProxy = EE73D92225387CEB004AE383 /* PBXContainerItemProxy */;
+		};
+		EE73D92E25387CEB004AE383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE73D90A25387CE8004AE383 /* PeopleCarousel */;
+			targetProxy = EE73D92D25387CEB004AE383 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE73D91425387CE8004AE383 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE73D91525387CE8004AE383 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE73D91925387CEB004AE383 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE73D91A25387CEB004AE383 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE73D93325387CEB004AE383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE73D93425387CEB004AE383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE73D93625387CEB004AE383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0BC215E24B6A244A744A26 /* Pods-PeopleCarousel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PeopleCarousel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.PeopleCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EE73D93725387CEB004AE383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 391C16C61F04D397D98CD86E /* Pods-PeopleCarousel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PeopleCarousel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.PeopleCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EE73D93925387CEB004AE383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0051478400320DEF4CCEFF /* Pods-PeopleCarouselTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeopleCarouselTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.PeopleCarouselTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleCarousel.app/PeopleCarousel";
+			};
+			name = Debug;
+		};
+		EE73D93A25387CEB004AE383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A6E639180B6A67EA35C26F /* Pods-PeopleCarouselTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeopleCarouselTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.PeopleCarouselTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleCarousel.app/PeopleCarousel";
+			};
+			name = Release;
+		};
+		EE73D93C25387CEB004AE383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16810B95291163107B30907C /* Pods-PeopleCarousel-PeopleCarouselUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeopleCarouselUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.PeopleCarouselUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeopleCarousel;
+			};
+			name = Debug;
+		};
+		EE73D93D25387CEB004AE383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B927FC9726929501A138052 /* Pods-PeopleCarousel-PeopleCarouselUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeopleCarouselUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.PeopleCarouselUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeopleCarousel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE73D90625387CE8004AE383 /* Build configuration list for PBXProject "PeopleCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE73D93325387CEB004AE383 /* Debug */,
+				EE73D93425387CEB004AE383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE73D93525387CEB004AE383 /* Build configuration list for PBXNativeTarget "PeopleCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE73D93625387CEB004AE383 /* Debug */,
+				EE73D93725387CEB004AE383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE73D93825387CEB004AE383 /* Build configuration list for PBXNativeTarget "PeopleCarouselTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE73D93925387CEB004AE383 /* Debug */,
+				EE73D93A25387CEB004AE383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE73D93B25387CEB004AE383 /* Build configuration list for PBXNativeTarget "PeopleCarouselUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE73D93C25387CEB004AE383 /* Debug */,
+				EE73D93D25387CEB004AE383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE73D90325387CE8004AE383 /* Project object */;
+}

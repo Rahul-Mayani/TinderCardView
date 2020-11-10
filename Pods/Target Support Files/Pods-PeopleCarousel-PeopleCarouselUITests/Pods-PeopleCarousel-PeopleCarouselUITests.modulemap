@@ -1,0 +1,6 @@
+framework module Pods_PeopleCarousel_PeopleCarouselUITests {
+  umbrella header "Pods-PeopleCarousel-PeopleCarouselUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
