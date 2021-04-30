@@ -93,7 +93,10 @@ class PeopleVC: BaseVC {
     
     private func updatefavouriteButton() {
         let user: PeopleModel = peopleData![swipeableView.topView()?.tag ?? 0]
-        heartButton.isSelected = user.isFavourite
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.heartButton.isSelected = user.isFavourite
+        }
     }
 }
 
