@@ -11,7 +11,7 @@
 Tinder card like carousel to swipe left and right
 
 ## Example
-![alt text](https://github.com/Rahul-Mayani/TinderCardView/blob/main/sample.mov)
+![alt text](https://github.com/Rahul-Mayani/TinderCardView/blob/main/sample.gif)
 
 ## Requirements
 
